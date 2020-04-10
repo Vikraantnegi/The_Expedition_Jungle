@@ -1,0 +1,158 @@
+body, input, button{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+/*Resetting all the default styling of the browser*/
+ul {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, p, figure {
+  font-weight: normal;
+  margin: 0; }
+
+button, input {
+  outline: none;
+  border: none;
+  color: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p, a, button, input {
+  font-size: 1.125rem; 
+}
+
+#background{
+	background-image: url("images/3.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	position: fixed;
+}
+
+#dimmed-background{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(20,20,20,0.8);
+	top:0;
+	left: 0;
+	transition: all .6s;
+}
+
+#next-page{
+	max-height: auto;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: visible;
+}
+
+#first{
+	position: relative;
+	z-index: 10;
+	color: white;
+	padding-left: 60px;
+	padding-top: 60px;
+	box-sizing: border-box;
+	width: 95%; /* Changes with the registration column width Empty_Width - Visible_Width*/
+	height: 100vh;
+	display: inline-block;
+	opacity: 1;
+	transition: all 1s .5s;
+}
+
+#first nav{
+	display: inline-block;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	padding-bottom: 1rem;
+	padding-right: 4.5rem;
+}
+
+#first nav li{
+	display: inline-block;
+	padding: 0 2rem;
+}
+
+#first nav li:first-child{
+	padding-left: 0;
+}
+
+#first nav a{
+	transition: opacity .1s;
+}
+
+#first nav a:hover{
+	opacity: 0.8;
+}
+
+#first article{
+	margin-top: 10rem;
+}
+
+#first article h1{
+	font-size: 2.5rem;
+}
+
+#first article p{
+	margin: 3rem 0;
+	width: 40rem;
+	line-height: 200%;
+}
+
+#first article button{
+	background-color: #404040;
+	color: #e8fff7;
+	padding: 1em 1.5em;
+	padding-right: 16em;
+	transition: opacity .2s;
+}
+
+#first article button:hover{
+	opacity: 0.6;
+}
+
+#sidebar{
+	width: 100%;	
+	display: flex;
+	position: absolute;
+	transform: translate(0px);
+	transition: all .6s 1s;
+}
+
+#sidebar #empty{
+	width: 90%;
+	height: 100vh;
+} 
+
+#sidebar #side{
+	width: 10%;
+	height: 100vh;
+	background-color: rgba(227,227,227,0.08);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	color: rgba(255,255,255,0.5);
+	font-size: 1rem;
+	transition: opacity 1.5s;
+}
+
+#sidebar #side h4{
+	padding: 10% 10px;
+	text-orientation: mixed;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: opacity .6s;
+}
+
